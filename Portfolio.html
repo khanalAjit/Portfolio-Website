@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Using meta tags to describe the work and the tools used-->
+    <meta name="description" content="Coursework">
+    <meta name="keywords" content="HTML, CSS, JS">
+    <meta name="author" content="Ajit Khanal">
+
+    <title>Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">        <!-- linking the external CSS-->
+    <script src="script.js"></script>               <!-- linking external javascript.-->
+    
+    <!--Using internal CSS -->
+    <style>
+        .black{
+            background-color: black;                /* Setting the background color of the class 'black'*/
+            }
+        .black figure img {                         /*Style of images inside the class 'black'*/
+            margin-left: 3%;
+            margin-right: 3%;
+            margin-top: 5%;
+            margin-bottom: 5%;
+            width: 1200px;
+            border-radius: 10%;
+            }
+           
+    </style>
+</head>
+<body>
+    <div class="part">
+        <div class="half">
+            <h1>AJIT KHANAL</h1>        <!-- Heading  -->
+        </div>
+
+
+            <!-- Creating a navigation bar -->
+
+        <div class="half">
+            <nav>
+                <ul>            <!-- Using unordered list ti listout the nav buttons-->
+                    <li> <a href="Index.html" >Home</a></li>
+                    <li> <a href="CV.html">My CV</a></li>
+                    <li> <a href="Portfolio.html" class = "active">Portfolio</a></li> <!-- using property of the class 'active'-->
+                    <li> <a href="Blog.html">Blog</a></li>
+                    <li> <a href="Research.html">Research</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+
+    <div class="black">         
+    <figure>
+        <img  src="Images/Profile - Copy.jpg" alt="MyPhoto">   <!-- Adding image-->
+    </figure>
+    </div>
+
+    <h3 style="color: white;">About Me</h3>         <!-- Using inline CSS-->
+    <div class="part">
+        <div class="half">                  
+            <article>           
+                Hi, My name is Ajit Khanal. Born in the year 2001 December 24, you can call me the hybrid of the late 90's kid
+                and the gen Z. To talk about my education, I studied in two different schools (Monohara and Monastic). I was what people call a
+                bookworm. Atleast they thought I was. But on the other hand I was kind of a lazy guy who loved sleeping and playing with gadgets.
+                Believe me I was almost kicked out from my own house for messing up with the Television. I spent my time imagining stuffs that 
+                probably is impossible to happen in real life even now. Still my academics were pretty good as I never had to hide my test report 
+                from my parents. Perhaps that was the reason for my friends to call me a bookworm.
+                <img src="Images/me.jpg" alt="ME">         <!-- Adding an Image-->
+            </article>
+        </div>
+
+        <div class="half">              
+
+            <h3>Academics and Achievements</h3>
+
+            <article>
+                Funny thing is even the teachers thaught I was a good kid who never makes noise in the class and is good at studies. Well they were 
+                right about the studying part but believe me when I say that my friends were punished for the noise I made. Having an innocent face
+                became an advantage for my pranks. I pulled off countless pranks but was only busted once. Let's not reveal why and how I was busted
+                here. If you really wamt to know you can dm me in the social medias given at the end of the page. Now let me flex my achievements. I swear
+                with my hands over a geeta book that whatever I say will be the truth and only the truth. So lets start with indoor games, I was the 
+                house Captain of the Green House and participated and helped in organizing almost every Extracurricular Activies that happend in the school.
+                But I was best at Quiz and Debate. I was the school champion of Table Tennis from grade 7 to grade 9. So I was given a chance to participate 
+                in the interschool TT competition organized at SOS which unfortunately I lost. I was also the Badminton Champion of the School. But the 
+                thing I was best at was Football (Soccer). Due to the earthquake I was only able to paticipate in the Interschool Football Competition (FISM)
+                only once. Still I was the highest scorer and lost the game in the semifinals in the penalty shootout. It is already a long article 
+                so I am stopping here. But hey if you want to talk with me and share literally anything find me in the social medias given below.
+                <img src="Images/team.jpg" alt="Football Team">        <!-- Adding an Image-->
+            </article>  
+        </div>
+    </div>
+
+
+    <h1 style="font-size: 30px; color:gold;">Find Me At :</h1>  <!-- Using inline CSS-->
+<div class="contact">
+
+    <table>
+        <tr>
+            <th><img src="Images/Facebook_Logo.png" alt="Facebook"> Facebook </th>
+         <td> : <a href="https://www.facebook.com/khanal.ajit/">Khanal Ajit</a></td>
+        </tr>
+        <tr>
+            <th><img src="Images/insta.jpg" alt="Instagram" > Instagram</th>
+            <td> : <a href="https://www.instagram.com/call_me_kuro_ashi/">Asmodeus Sama</a></td>
+        </tr>
+        <tr>
+            <th><img src="Images/Snapchat.png" alt="Snapchat">Snapchat</th>
+            <td>: <a href="https://www.snapchat.com/add/khanalajith2019"> Asmodeus Sama</a></td>
+        </tr>
+    </table>
+</div>
+
+
+<h1 style="color: white;">                  <!-- Using inline CSS-->
+    Or you can leave your message here!
+</h1>
+
+
+<div class="contact">           <!-- using the class contact-->
+    <div class="half">
+        <img style="float: right;" src="Images/pointer.png" alt="pointing">    <!--Adding an image-->
+    </div>
+
+    <!--
+        Creating a form using 'form' tag
+        using inline CSS
+    -->
+    <div class="half">
+        <form onsubmit="validate1()" name = "messageForm">          <!--Calling the function 'validate1'-->
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <td><input type="text" name = "Name"></td>
+                </tr>
+                <tr>
+                    <th>Email</th>
+                    <td><input type="text" name = "Email"></td>
+                </tr>
+                <tr>
+                    <th>Phone Number</th>
+                    <td><input type="text" name = "Phone"></td>
+                </tr>
+                <tr>
+                    <th>Your Message</th>
+                    <td><textarea name="Message" id="1" cols="30" rows="10"></textarea></td>
+                </tr>
+                <tr class="send">
+                    <td colspan="2"><input type="submit" value="Send"></td>
+                </tr>
+            </table>
+            
+        </form>
+    </div>
+</div>
+
+</body>
+
+</html>

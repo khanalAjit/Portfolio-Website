@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Using meta tags to describe the work and the tools used-->
+    <meta name="description" content="Coursework">
+    <meta name="keywords" content="HTML, CSS, JS">
+    <meta name="author" content="Ajit Khanal">
+
+    <title>Home</title> 
+    
+    <link rel="stylesheet" href="style.css">    <!-- linking the external CSS-->
+    
+    <!-- Writing an internal CSS for different tags and class-->
+    <style>
+        .img{
+            height: 700px;
+            width: 1200px;
+            border-radius: 2%;
+        }
+        
+        .hide{                  
+            display: none;        /* Creating a class called hide to hide the picture*/      
+        }
+        .Changing{
+            background-color:black;
+            padding: 25px;
+            text-align: center;
+            border: 1px solid;
+        }
+        .half figure img{               /* Style for the images inside the class half*/
+            width: 300px;
+            border-radius: 50%;
+        }
+        .half h2{
+            text-align: right;
+            margin-top: 15px;
+            font-size: 30px;
+        }
+        article{
+            color: white;      /* Making the color of text inside article tag white*/
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="part">                      <!-- Using the attributes of class 'part'-->
+        <div class="half">                  
+            <h1>AJIT KHANAL</h1>            <!--Writing a heading -->
+        </div>
+        
+                    <!-- Creating a navigation bar-->
+        <div class="half">
+            <nav>
+                <ul>            <!-- Using unordered list ti listout the nav buttons-->
+                    <li> <a href="Index.html" class = "active">Home</a></li>  <!-- using property of the class 'active'-->
+                    <li> <a href="CV.html">My CV</a></li>
+                    <li> <a href="Portfolio.html" >Portfolio</a></li>
+                    <li> <a href="Blog.html">Blog</a></li>
+                    <li> <a href="Research.html">Research</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+
+    <!-- Using article tag to speak out my thoughts -->
+    <article>
+    <h2>WELCOME <br>
+        To My HomePage
+    </h2>
+
+        Let me ask you something... <br>
+        What do you think about the saying :
+    
+    <h2>
+        "Don't work Hard work Smart" ?
+    </h2>
+    
+        Well in my case... <br>
+        I don't think this is the way. Like aren't they the same people who say 'Hardwork beats Talent when Talent doesn't 
+        work Hard'? <br> So what I believe in is: 
+    
+
+    <h2>Work Hard and Think Smart.</h2>
+
+   
+        So I have decided to work hard smartly so one day I can enjoy these views with my precious other half.
+    
+    </article>
+       
+        <!-- 
+            Inserting the pictures
+            Giving them id to make tem unique
+            Adding a change button which calls Change function when clicked
+         -->
+  <div class="Changing">
+    <figure>
+        <img class= 'img hide' id="P1" src="Images/sunset.jpg" alt="Picture1" >
+        <img class= 'img hide' id="P2" src="Images/sunrise.jpg" alt="Picture2">
+        
+        <button onclick="Change()">Change The View</button>
+    </figure>
+  </div>
+
+
+    <!-- 
+        Writing a JavaScript
+        Creating the function change
+        declaring variable
+        Providing condition to change the picture
+        Calling the hidden picture to be displayed
+    -->
+    <script>
+        function Change(){
+            var pic1 = document.getElementById('P1')
+            var pic2 = document.getElementById('P2')
+
+            if(pic1.style.display=='none'){         // if Picture 2 is being displayed
+                pic1.style.display = 'block'        // display Picture 1
+                pic2.style.display = 'none'         // hide picture 2
+            }
+            else{                             // if picture 1 is being displayed
+                pic1.style.display = 'none'         // hide picture 1
+                pic2.style.display = 'block'        // display picture 2
+            }       
+              
+            }
+            document.getElementById('P1').style.display= "block"        // Display Picture 1
+    </script>
+
+
+        <!-- Adding links to my portfolio and blog -->
+    <div class="part">
+        <div class="half">
+            <h2>If you want to know me...</h2>
+            <h2><a href="Portfolio.html">CLICK HERE!</a></h2> <br><br>  <!-- Link to Portfolio -->
+            <h2>If you want to know how Technology has changed our daily life... </h2>
+            <h2><a href="Blog.html"> Read My Bolg</a></h2>              <!-- Link to Blog-->
+        </div>
+
+        <!-- Adding a photo-->
+        <div class="half">
+            <figure>
+            <img src="Images/homeee.jpg" alt="My Pic">
+            </figure>
+        </div>
+    </div>
+  
+</body>
+
+</html>

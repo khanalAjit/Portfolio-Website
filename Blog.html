@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Using meta tags to describe the work and the tools used-->
+    <meta name="description" content="Coursework">
+    <meta name="keywords" content="HTML, CSS, JS">
+    <meta name="author" content="Ajit Khanal">
+
+    <title>Blog</title>
+
+    <!-- linking the external CSS-->
+    <link rel="stylesheet" href="style.css">
+
+     <!--Using internal CSS -->
+    <style>
+       
+        .half{
+            background-color: rgba(227, 241, 101, 0.527);
+            padding: 20px;
+        }
+        body{
+            background-image: url(Images/background4.jpg);
+        }
+    </style>
+
+    <!-- linking external javascript.-->
+    <script src="script.js"></script>
+
+</head>
+
+<body>
+    <div class="part">
+
+        <div class="half">
+            <h1>AJIT KHANAL</h1>        <!-- This s a heading-->
+        </div>
+
+        <!-- Creating a navigation bar-->
+        <div class="half">
+            <nav>
+                <ul>
+                    <li> <a href="Index.html" >Home</a></li>
+                    <li> <a href="CV.html">My CV</a></li>
+                    <li> <a href="Portfolio.html" >Portfolio</a></li>
+                    <li> <a href="Pages/Blog.html" class = "active" >Blog</a></li>    <!-- using property of the class 'active'-->
+                    <li> <a href="Research.html">Research</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    
+        
+   
+    <!--Writing a heading-->
+<h1>
+    IMPACT Of The TECHNOLOGY <br>
+    In My <br>
+    DAILY LIFE
+</h1>
+
+<!-- Using the class 'part'-->
+<div class="part">      
+    <div class="half">
+        <figure>
+            <img src="Images/tech1.jpg" alt="Tech">    <!--Adding an image-->
+        </figure>
+    </div>
+
+
+    <div class="half">
+
+        <h3>What is Technology?</h3>    <!--Heading-->
+
+        <!-- Using article tag to write an article-->
+        <article>
+            Technology can be defined as the science or knowledge put into practice to solve  problems or invent useful tools.
+            It brings about a change to the human environment. It can also be called a development making human life easier,
+            luxurious and sustainable. For exmaple : The prehistoric means to create a fire was to strike the stones together 
+            or to use the friction of the woods. But, today the technology has given us a flame thrower. The tiresome walking to
+            travel a distance is replaced by vehicles, aeroplanes, ships and trains. The communication and interconnection between
+            people has grately increased due to the invention and use of internet.
+        </article>
+    </div>
+</div>
+
+<h3>How has it affected peoples daily life?</h3>    <!--Heading-->
+
+<div class="part">
+
+    <div class="half">
+
+        <article>               
+            Along with the advancement in time, there has been an advancement in the technology. Along with peoples knowledge
+            the technology used in  day to day life has improved. The traditional way of gringing the maslas is now made by
+            grinders and mixtures. The simplest example can be the housing and clothing. The caves have been improved with time 
+            as huts, cottages, houses, buildings, and even mansions. The leaf used to cover the skin and to protect one from cold
+            has turned into tech involved jackets with builtin heaters and earphones. The advancement in science and the achievements
+            it gave has given us countless technologies. From the nip of the pen to the zip of the pen a technology is used. <br> <br>
+            From making the manual labour work easier to overtaking the work technology has changed the lives of the peoples.
+            Now there is almost nothing a man can achieve. Can you imagine? the man that faught to survive with other men are now 
+            a part of the single world. From running in the fields to  flying in the sky, from worshiping the moon to landing on 
+            the moon, form giving birth without even a painkiller to giving birth in the world's most convinient faculties without
+            even feeling a single pain, how a persons life has changed. <br>
+            The kid who used to play thief and police with friends in the park now plays call of duty warzone and PUBG online with 
+            the world. The things that technology has changed in peoples lifestyle is countless and form those countless things even 
+            less than 1% was mentioned above.
+
+        </article>
+    </div>
+
+    <div class="half">
+        <figure>
+            <img src="Images/robot.jpg" alt="Image">   <!--Adding an image-->
+        </figure>
+    </div>
+</div>
+
+<h2>Impact of Technology In My Daily Life</h2>      <!--Heading-->
+
+<!--Using the class 'part'-->
+<div class="part">
+    <div class="half">
+
+        <article>         
+            As I am a student, the advancement in technology has affected my daily life in a huge way. It has changed the way I think,
+            the way I feel, the way I read, the way I interact with people and many more. I remember the days playing football in the 
+            fields, now its just me and the boys playing fifa infront of a screen. The sweat, the fun and the relaxtation I felt back 
+            in the days has turned into cussing, frustration and boredom.
+        </article>
+    </div>
+
+    <div class="half">
+        <article>
+            Even the way of eudcation has changed. I who hadn't even seen a computer in the childhood is now learning stuffs 
+            using one. The bulky notes I used to own has now changed to a simple word file or a pdf. The fee payment has also changed
+            as the schools that didnt use cheques and made the cash compulsary now  hardly does the card transaction. The 
+            ATM machine which I had only read about or seen in the movies, is being used by me. Most importantly due to the 
+            pandemic the same schools that had banned the use of mobiles and laptops is now encouraging the parents to buy 
+            one for their child. The traditional prison like education system has now been digitalised and more entertaining.
+        </article>
+    </div>
+</div>
+
+<div class="part">
+    <div class="half">
+        <figure>
+            <img src="Images/tradedu.jpg" alt="Traditional Education">     <!--Adding an image-->
+            <figcaption>Traditional Learning System</figcaption>    <!--giving caption to the image-->
+        </figure>
+    </div>
+
+    <div class="half">
+        <figure>
+            <img src="Images/onlineedu.jpg" alt="Modern Education">    <!--Adding an image-->
+            <figcaption>Modern/Online Learning System</figcaption>      <!--giving caption to the image-->
+        </figure>
+    </div>
+
+</div>
+
+<!-- Writing a heading-->
+<h2>What do you think? <br>
+    Share your Views.
+</h2>
+
+
+<!--Creating a form using 'form' tag-->
+<div class="part">          <!--Using the class 'part'-->
+    <div class="half">
+        <form onsubmit="check()" name="messageForm">    <!--Calling the function 'validate1'-->
+            <table>                 <!--Creating a table-->
+                <tr>
+                    <th>Your Name</th>
+                    <td><input type="text" name="NAME"></td>
+                </tr>
+                <tr>
+                    <th>Your Email</th>
+                    <td><input type="text" name="EMAIL"></td>
+                </tr>
+                <tr>
+                    <th>Comment Here</th>
+                    <td><textarea name="MESSAGE" id="2" cols="30" rows="10"></textarea></td>
+                </tr>
+                <tr >
+                    <td colspan="2"><input type="submit" value="SEND"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+
+    <div class="half">
+        <figure>
+            <img src="Images/meme2.jpg" alt="Pointer">     <!-- Adding an image-->
+        </figure>
+    </div>
+
+</div>
+
+
+<!--Adding a footer-->
+<footer>
+    <h4>&copy Ajit Khanal  </h4>        <!--Copyright-->
+</footer>
+
+</body>
+</html>

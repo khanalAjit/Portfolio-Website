@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Using meta tags to describe the work and the tools used-->
+    <meta name="description" content="Coursework">
+    <meta name="keywords" content="HTML, CSS, JS">
+    <meta name="author" content="Ajit Khanal">
+    <title>My CV</title>
+    <link rel="stylesheet" href="style.css">        <!-- linking the external CSS-->
+
+    <!-- Writing an internal CSS for different tags and class-->
+    <style>
+        .part figure img{       /* Style for images inside the class 'part'*/
+            width: 150px;  
+            height:150px;
+        }
+        .list ul li{
+            font-size: 20px;
+            padding: 15px;
+        }
+        .whole{
+            background-image: url(Images/color.jpg);  /* Adding background image for the class 'whole'*/
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="part">              <!-- Using the class 'part'-->
+        <div class="half">
+            <h1>AJIT KHANAL</h1>        <!--Writing a heading -->
+        </div>
+
+
+            <!-- Creating a navigation bar-->
+        <div class="half">
+            <nav>
+                <ul>            <!-- Using unordered list ti listout the nav buttons-->
+                    <li> <a href="Index.html" >Home</a></li>
+                    <li> <a href="CV.html" class = "active">My CV</a></li>  <!-- using property of the class 'active'-->
+                    <li> <a href="Portfolio.html" >Portfolio</a></li>
+                    <li> <a href="Blog.html">Blog</a></li>
+                    <li> <a href="Research.html">Research</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+        <!-- Creating a class 'whole'-->
+    <div class="whole">
+    <h2>                        <!-- Heading-->
+        CURRICULUM VITAE
+    </h2>
+    <div class="part">
+        <div class="left">      
+            <table>             <!--Creating a table-->
+                <tr>
+                    <th> Name </th> 
+                    <td>: Ajit Khanal</td>
+                </tr>
+                <tr>
+                    <th>Address </th>
+                    <td>: Kageshowri Manohara - 7, KTM</td>
+                </tr>
+                <tr>
+                    <th>Phone</th>
+                    <td>: 9818943327</td>
+                </tr>
+                <tr>
+                    <th>Email</th>
+                    <td>: khanal.ajeeth32@gmail.com</td>
+                </tr>
+                <tr>
+                    <th>Applying For</th>
+                    <td>: The Post of Teacher</td>
+                </tr>
+            </table>
+        </div>
+        <div class="right">
+            <figure>            <!-- Adding a picture -->
+                <img src="Images/Profile.jpg" alt="Profile">
+            </figure>
+        </div>
+    </div>
+    <h3>
+        PERSONAL DATA               <!-- Heading-->
+    </h3>
+    <div class="part">
+    
+        <table>             <!-- Creating a table -->
+            <tr>
+                <th>Nationality</th>
+                <td>: Nepali</td>
+            </tr>
+            <tr>
+                <th>Sex</th>
+                <td>: Male</td>
+            </tr>
+            <tr>
+                <th>Marital Status</th>
+                <td>: Single</td>
+            </tr>
+            <tr>
+                <th>Date of Birth</th>
+                <td>: December 24, 2001</td>
+            </tr>
+            <tr>
+                <th>Birth Place</th>
+                <td>: Kathmandu</td>
+            </tr>
+        </table>
+    
+
+
+    
+    </div>
+    <h3>
+        EDUCATION
+    </h3>
+    <div class="part">
+    <table>                     <!-- Creating a table inside the class 'part'-->
+        <tr>
+            <th>2004 - 2010</th>
+            <td>: Ekalabye Sikshya Sadan</td>
+        </tr>
+        <tr>
+            <th>2011 - 2018</th>
+            <td>: Monastic Public English School</td>
+        </tr>
+        <tr>
+            <th>2019-2021</th>
+            <td>: Capital Higher Secondary School (CCRC)</td>
+        </tr>
+        <tr>
+            <th>2022 - 2025</th>
+            <td>:Islington College</td>
+        </tr>
+    </table>
+    </div>
+
+    <h3>
+        ADDITIONAL TRAINING
+    </h3>
+
+
+    <div class="part">
+        <table>                 <!-- Creating a table inside the class 'part'-->
+            <tr>
+                <th>March - June, 2018</th>
+                <td>: Has successfully completed a Short COurse for MS OFFICE</td>
+            </tr>
+            <tr>
+                <th>2019 - 2021</th>
+                <td>: Was a member of IT club of the school and have taken part in almolst every workshops conducted.</td>
+            </tr>
+            <tr>
+                <th>2021</th>
+                <td>: Taken part in the Vocational Training conducted by CTEVT</td>
+            </tr>
+        </table>
+    
+    </div>
+
+    <h3> Skills </h3>
+
+    <div class="list">
+        <ul>                    <!-- Creating an unordered list inide the class 'list' -->
+            <li>Good Communication Skill.</li>
+            <li>Open-Minded and adaptable to changes or unexpected obstacles.</li>
+            <li>High self-motivation on working individually or with a team.</li>
+            <li>Long-term thinker with coach ability.</li>
+            <li>Empathy for co-workers and customers </li>
+            <li>Expert at Microsoft Office with Photo and Video editing skills.</li>
+            <li>Have technical skills about MySQL, HTML and CSS</li>
+        </ul>
+    </div>
+
+    <h3>Things I love </h3>
+
+    <div class="list">
+        <ul>                <!-- Creating an unordered list inide the class 'list' -->
+            <li>Chocolate, Fast-foods and Icecreams</li>
+            <li>Traveling, Adventures and Expolring new cultures</li>
+            <li>Playing online games</li>
+            <li>Sports like Futsal, Table Tennis, Swimming</li>
+            <li>Listening to classical and soft music</li>
+        </ul>
+    </div>
+    
+</body>
+
+</html>
